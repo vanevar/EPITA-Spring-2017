@@ -13,8 +13,8 @@ class WeatherFetch {
     private let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather"
     private let openWeatherMapAPIKey = "5559b4ad4f9fc0b8ce21cd6b19a33100"
     
-    func getWeather(city: String) {
-        
+    func getWeather(city: String) -> Data? {
+      
         // This is a pretty simple networking task, so the shared session will do.
         let session = URLSession.shared
         
@@ -32,8 +32,13 @@ class WeatherFetch {
                 print("Raw data:\n\(data!)\n")
                 let dataString = String(data: data!, encoding: String.Encoding.utf8)
                 print("Human-readable data:\n\(dataString!)")
+                let jsonParser = JsonParser()
+                print("From weather")
+                print(jsonParser.parseCity(data: data))
             }
         }
         dataTask.resume()
+       return nil
     }
+  
 }

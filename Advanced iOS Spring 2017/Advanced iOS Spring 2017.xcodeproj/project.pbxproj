@@ -14,6 +14,9 @@
 		3C0B8CCC1EA7FD9700F93394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B8CCA1EA7FD9700F93394 /* LaunchScreen.storyboard */; };
 		3C0B8CD71EA7FD9700F93394 /* Advanced_iOS_Spring_2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B8CD61EA7FD9700F93394 /* Advanced_iOS_Spring_2017Tests.swift */; };
 		3C30FDBF1EB2825700225C75 /* WeatherFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30FDBE1EB2825700225C75 /* WeatherFetch.swift */; };
+		953E7AF31EC3868A003AAB24 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E7AF21EC3868A003AAB24 /* JsonParser.swift */; };
+		95660A171ECCB3CE0057F660 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660A161ECCB3CE0057F660 /* Weather.swift */; };
+		95660A1B1ECCC3D40057F660 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660A1A1ECCC3D40057F660 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		3C0B8CD61EA7FD9700F93394 /* Advanced_iOS_Spring_2017Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_iOS_Spring_2017Tests.swift; sourceTree = "<group>"; };
 		3C0B8CD81EA7FD9700F93394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C30FDBE1EB2825700225C75 /* WeatherFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFetch.swift; sourceTree = "<group>"; };
+		953E7AF21EC3868A003AAB24 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		95660A161ECCB3CE0057F660 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		95660A1A1ECCC3D40057F660 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		3C0B8CC01EA7FD9700F93394 /* Advanced iOS Spring 2017 */ = {
 			isa = PBXGroup;
 			children = (
+				953E7AF21EC3868A003AAB24 /* JsonParser.swift */,
 				3C0B8CC11EA7FD9700F93394 /* AppDelegate.swift */,
 				3C0B8CC31EA7FD9700F93394 /* ViewController.swift */,
 				3C30FDBE1EB2825700225C75 /* WeatherFetch.swift */,
@@ -86,6 +93,8 @@
 				3C0B8CC81EA7FD9700F93394 /* Assets.xcassets */,
 				3C0B8CCA1EA7FD9700F93394 /* LaunchScreen.storyboard */,
 				3C0B8CCD1EA7FD9700F93394 /* Info.plist */,
+				95660A161ECCB3CE0057F660 /* Weather.swift */,
+				95660A1A1ECCC3D40057F660 /* TableView.swift */,
 			);
 			path = "Advanced iOS Spring 2017";
 			sourceTree = "<group>";
@@ -203,8 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0B8CC41EA7FD9700F93394 /* ViewController.swift in Sources */,
+				95660A1B1ECCC3D40057F660 /* TableView.swift in Sources */,
 				3C0B8CC21EA7FD9700F93394 /* AppDelegate.swift in Sources */,
+				953E7AF31EC3868A003AAB24 /* JsonParser.swift in Sources */,
 				3C30FDBF1EB2825700225C75 /* WeatherFetch.swift in Sources */,
+				95660A171ECCB3CE0057F660 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
