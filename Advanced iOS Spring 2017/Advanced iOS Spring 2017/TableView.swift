@@ -48,11 +48,14 @@ class TableView: UITableViewController {
   
     // Re usage of cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherTableViewCell", for: indexPath) as?
+      WeatherTableViewCell else {
+        fatalError("error")
+      }
 
         // Configure the cell...
-        cell.textLabel?.text = weatherArray[indexPath.row].city
-        cell.detailTextLabel?.text = "\(weatherArray[indexPath.row].temperature)"
+        cell.cityLabel.text = weatherArray[indexPath.row].city
+        cell.tempLabel.text = "\(weatherArray[indexPath.row].temperature)"
         return cell
     }
  
