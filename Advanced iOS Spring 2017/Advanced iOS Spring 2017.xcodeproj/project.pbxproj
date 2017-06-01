@@ -18,6 +18,8 @@
 		953E7AF31EC3868A003AAB24 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E7AF21EC3868A003AAB24 /* JsonParser.swift */; };
 		95660A171ECCB3CE0057F660 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660A161ECCB3CE0057F660 /* Weather.swift */; };
 		95660A1B1ECCC3D40057F660 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95660A1A1ECCC3D40057F660 /* TableView.swift */; };
+		95C8D47F1EE07CBB0085C728 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8D47E1EE07CBB0085C728 /* WeatherViewController.swift */; };
+		95C8D4811EE0874B0085C728 /* AddCityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8D4801EE0874B0085C728 /* AddCityController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		953E7AF21EC3868A003AAB24 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		95660A161ECCB3CE0057F660 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		95660A1A1ECCC3D40057F660 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		95C8D47E1EE07CBB0085C728 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		95C8D4801EE0874B0085C728 /* AddCityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCityController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				95660A161ECCB3CE0057F660 /* Weather.swift */,
 				95660A1A1ECCC3D40057F660 /* TableView.swift */,
 				95046A281ED5EEEB003B4749 /* WeatherTableViewCell.swift */,
+				95C8D47E1EE07CBB0085C728 /* WeatherViewController.swift */,
+				95C8D4801EE0874B0085C728 /* AddCityController.swift */,
 			);
 			path = "Advanced iOS Spring 2017";
 			sourceTree = "<group>";
@@ -219,8 +225,10 @@
 				95046A291ED5EEEB003B4749 /* WeatherTableViewCell.swift in Sources */,
 				3C0B8CC21EA7FD9700F93394 /* AppDelegate.swift in Sources */,
 				953E7AF31EC3868A003AAB24 /* JsonParser.swift in Sources */,
+				95C8D47F1EE07CBB0085C728 /* WeatherViewController.swift in Sources */,
 				3C30FDBF1EB2825700225C75 /* WeatherFetch.swift in Sources */,
 				95660A171ECCB3CE0057F660 /* Weather.swift in Sources */,
+				95C8D4811EE0874B0085C728 /* AddCityController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

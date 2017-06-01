@@ -10,7 +10,15 @@ import UIKit
 
 class TableView: UITableViewController {
 
-  var weatherArray = [Weather]()
+ var weatherArray = [Weather]()
+  
+  @IBAction func unwindToWeatherList(sender: UIStoryboardSegue){
+    if let sourceViewController = sender.source as? AddCityController , let weather = sourceViewController.weather {
+      let newIndexPath = IndexPath(row: weatherArray.count, section: 0)
+      weatherArray.append(weather)
+      tableView.insertRows(at: [newIndexPath], with: .automatic)
+    }
+  }
   
     override func viewDidLoad() {
         super.viewDidLoad()
