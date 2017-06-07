@@ -31,9 +31,9 @@ class TableView: UITableViewController {
       
       weatherArray.append(Weather(city: "Berlin", temperature: 33, picture: UIImage(named:"Berlin"))!)
       weatherArray.append(Weather(city: "Paris", temperature: 666, picture: UIImage(named:"Paris"))!)
-      weatherArray.append(Weather(city: "Tokyo", temperature: 20, picture: nil)!)
-      weatherArray.append(Weather(city: "Prague", temperature: 27, picture: nil)!)
-      weatherArray.append(Weather(city: "Oruro", temperature: 11, picture: nil)!)
+      weatherArray.append(Weather(city: "Tokyo", temperature: 20, picture: UIImage(named:"Tokyo"))!)
+      weatherArray.append(Weather(city: "Prague", temperature: 27, picture: UIImage(named:"Prague"))!)
+      weatherArray.append(Weather(city: "Oruro", temperature: 11, picture: UIImage(named:"Oruro"))!)
     }
 
     override func didReceiveMemoryWarning() {

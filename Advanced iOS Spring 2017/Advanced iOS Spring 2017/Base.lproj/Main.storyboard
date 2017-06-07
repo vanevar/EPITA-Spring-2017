@@ -87,6 +87,7 @@
                                     <outlet property="cityLabel" destination="J0K-2T-iD3" id="PHr-2D-79z"/>
                                     <outlet property="imageContainer" destination="6O5-kt-PDG" id="RY7-Fy-Ehj"/>
                                     <outlet property="tempLabel" destination="wCk-Jc-ytC" id="vNq-TY-mLV"/>
+                                    <segue destination="edE-Yw-cfc" kind="showDetail" id="3Em-qf-czI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -134,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-2i-jkm">
-                                <rect key="frame" x="287" y="485" width="42" height="21"/>
+                                <rect key="frame" x="159" y="485" width="170" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -151,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiC-Rd-j58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4176.8000000000002" y="-83.208395802098963"/>
+            <point key="canvasLocation" x="2429.5999999999999" y="431.33433283358323"/>
         </scene>
         <!--Add a City-->
         <scene sceneID="l49-sd-LbP">
