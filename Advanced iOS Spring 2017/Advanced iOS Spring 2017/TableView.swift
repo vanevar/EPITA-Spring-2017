@@ -29,8 +29,8 @@ class TableView: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
       
-      weatherArray.append(Weather(city: "Berlin", temperature: 33, picture: nil)!)
-      weatherArray.append(Weather(city: "Paris", temperature: 666, picture: nil)!)
+      weatherArray.append(Weather(city: "Berlin", temperature: 33, picture: UIImage(named:"Berlin"))!)
+      weatherArray.append(Weather(city: "Paris", temperature: 666, picture: UIImage(named:"Paris"))!)
       weatherArray.append(Weather(city: "Tokyo", temperature: 20, picture: nil)!)
       weatherArray.append(Weather(city: "Prague", temperature: 27, picture: nil)!)
       weatherArray.append(Weather(city: "Oruro", temperature: 11, picture: nil)!)
@@ -64,6 +64,7 @@ class TableView: UITableViewController {
         // Configure the cell...
         cell.cityLabel.text = weatherArray[indexPath.row].city
         cell.tempLabel.text = "\(weatherArray[indexPath.row].temperature)"
+        cell.imageContainer.image = weatherArray[indexPath.row].picture
         return cell
     }
  

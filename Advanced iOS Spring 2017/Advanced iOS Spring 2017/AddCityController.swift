@@ -30,7 +30,17 @@ class AddCityController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      var random = arc4random_uniform(2)
+      var name = ""
+      switch random {
+      case 0:
+        name="Berlin"
+      case 1:
+        name="Paris"
+      default:
+        name="Paris"
+      }
+        inputImage.image = UIImage(named: name)
     }
 
     override func didReceiveMemoryWarning() {
