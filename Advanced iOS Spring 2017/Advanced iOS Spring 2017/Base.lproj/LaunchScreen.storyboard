@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,82 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s22-z4-iwt">
+                                <rect key="frame" x="79" y="322" width="217" height="23"/>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="epv-Qm-guZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynd-hH-rPI">
+                                <rect key="frame" x="89" y="109" width="197" height="36"/>
+                                <color key="tintColor" red="0.074919166734587594" green="0.27346838059666223" blue="0.63295417746113991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="bN1-BH-iQx"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="EPIWeather">
+                                        <attributes>
+                                            <color key="NSColor" red="0.072720408515749485" green="0.21431927460937683" blue="0.52793069948186533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.0657778759597063" green="0.27608262992608584" blue="0.63295417746113991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d9-pw-Jt1">
+                                <rect key="frame" x="77" y="395" width="222" height="26"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By: Vanessa Vargas Garnica">
+                                        <attributes>
+                                            <color key="NSColor" red="0.061560033809720437" green="0.17731520723340444" blue="0.43458549222797926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="ChalkboardSE-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEf-az-p9x">
+                                <rect key="frame" x="91.5" y="441" width="193.5" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="vanessa.vargasgarnica@epita.fr">
+                                        <attributes>
+                                            <color key="NSColor" red="0.065697609198100429" green="0.18598542159398809" blue="0.43458549222797926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="ChalkboardSE-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ynd-hH-rPI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0jJ-fn-Jf1"/>
+                            <constraint firstItem="epv-Qm-guZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1Nc-MS-paf"/>
+                            <constraint firstItem="6d9-pw-Jt1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="B0t-5k-Nvl"/>
+                            <constraint firstItem="epv-Qm-guZ" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="C9J-86-MbZ"/>
+                            <constraint firstItem="6d9-pw-Jt1" firstAttribute="top" secondItem="s22-z4-iwt" secondAttribute="bottom" constant="50" id="CGz-jw-etA"/>
+                            <constraint firstItem="s22-z4-iwt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="322" id="GeL-tz-03o"/>
+                            <constraint firstItem="s22-z4-iwt" firstAttribute="centerX" secondItem="Ynd-hH-rPI" secondAttribute="centerX" id="GlW-Pp-stk"/>
+                            <constraint firstItem="s22-z4-iwt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IZR-sP-Z22"/>
+                            <constraint firstItem="epv-Qm-guZ" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="Kno-dq-xGs"/>
+                            <constraint firstItem="wEf-az-p9x" firstAttribute="top" secondItem="6d9-pw-Jt1" secondAttribute="bottom" constant="20" id="Nni-Ev-czU"/>
+                            <constraint firstItem="Ynd-hH-rPI" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="89" id="Ww7-wl-v5N"/>
+                            <constraint firstItem="s22-z4-iwt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="63" id="eaH-F1-GEq"/>
+                            <constraint firstItem="wEf-az-p9x" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kgO-0N-LiB"/>
+                            <constraint firstItem="epv-Qm-guZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qgR-MD-Jjr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="896" height="1746"/>
+    </resources>
 </document>

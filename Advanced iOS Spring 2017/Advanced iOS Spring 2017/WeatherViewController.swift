@@ -10,14 +10,18 @@ import UIKit
 
 class WeatherViewController: UIViewController {
 
-  @IBOutlet weak var bkgImage: UIImageView!
-  @IBOutlet weak var cityLabel: UILabel!
-  @IBOutlet weak var tempLabel: UILabel!
+  var weather = Weather(city: "", temperature: 0, picture: nil )
+  
+  @IBOutlet weak var image: UIImageView!
+  @IBOutlet weak var cityLbl: UILabel!
+  @IBOutlet weak var tempLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+      image.image = weather?.picture
+      cityLbl.text = weather?.city
+      tempLbl.text = String(describing: weather!.temperature)
+   }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

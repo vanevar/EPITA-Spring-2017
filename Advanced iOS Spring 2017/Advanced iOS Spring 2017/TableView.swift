@@ -10,7 +10,8 @@ import UIKit
 
 class TableView: UITableViewController {
 
- var weatherArray = [Weather]()
+  let weatherDetailSegue = "ShowWeatherDetail"
+  var weatherArray = [Weather]()
   
   @IBAction func unwindToWeatherList(sender: UIStoryboardSegue){
     if let sourceViewController = sender.source as? AddCityController , let weather = sourceViewController.weather {
@@ -68,6 +69,22 @@ class TableView: UITableViewController {
         return cell
     }
  
+  
+  
+   // MARK: - Navigation
+   
+   // In a storyboard-based application, you will often want to do a little preparation before navigation
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // Get the new view controller using segue.destinationViewController.
+   // Pass the selected object to the new view controller.
+    if  segue.identifier == weatherDetailSegue,
+      let destination = segue.destination as? WeatherViewController,
+      let weatherIndex = tableView.indexPathForSelectedRow?.row
+      {
+        destination.weather = weatherArray[weatherIndex]
+      }
+   }
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -104,14 +121,6 @@ class TableView: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }
