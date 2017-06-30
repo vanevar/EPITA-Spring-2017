@@ -9,21 +9,21 @@
 import Foundation
 
 class JsonParser{
-  
-  func parseCity( data:Data? ) -> String{
-     var names = String()
-    do {
-      if let data = data,
-        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
-        let cityName = json["name"] as? String {
-        names.append(cityName)
-      }
-    } catch {
-      print("Error parsing JSON: \(error)")
+
+    func parseCity( data:Data? ) -> String{
+            var names = String()
+        do {
+            if let data = data,
+                let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                let cityName = json["name"] as? String {
+                names.append(cityName)
+            }
+        }
+        catch {
+            print("Error parsing JSON: \(error)")
+        }
+        print("Names")
+        print(names)
+        return names
     }
-    print("Names")
-    print(names)
-    return names
- 
-  }
 }
