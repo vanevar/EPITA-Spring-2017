@@ -59,9 +59,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEf-az-p9x">
-                                <rect key="frame" x="91.5" y="441" width="193.5" height="20"/>
+                                <rect key="frame" x="120" y="441" width="136.5" height="20"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="vanessa.vargasgarnica@epita.fr">
+                                    <fragment content="vanessa.vargasgarnica">
                                         <attributes>
                                             <color key="NSColor" red="0.065697609198100429" green="0.18598542159398809" blue="0.43458549222797926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="ChalkboardSE-Light"/>
